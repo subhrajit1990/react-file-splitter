@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-file-splitter/static/css/main.e6c13ad2.css",
+    "main.js": "/react-file-splitter/static/js/main.e127108a.js",
+    "static/js/453.5347bcd8.chunk.js": "/react-file-splitter/static/js/453.5347bcd8.chunk.js",
+    "index.html": "/react-file-splitter/index.html",
+    "main.e6c13ad2.css.map": "/react-file-splitter/static/css/main.e6c13ad2.css.map",
+    "main.e127108a.js.map": "/react-file-splitter/static/js/main.e127108a.js.map",
+    "453.5347bcd8.chunk.js.map": "/react-file-splitter/static/js/453.5347bcd8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.e127108a.js"
+  ]
+}
