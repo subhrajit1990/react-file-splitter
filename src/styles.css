@@ -59,3 +59,23 @@ button:hover {
 .download-links a:hover {
   text-decoration: underline;
 }
+
+
+.app-footer {
+  margin-top: 40px;
+  padding: 15px 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  background-color: #f7f7f7;
+}
+
+.app-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.app-footer a:hover {
+  text-decoration: underline;
+}
