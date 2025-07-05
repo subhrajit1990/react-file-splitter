@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import FileUploader from "./components/FileUploader";
 import FileSplitter from "./components/FileSplitter";
 import "./styles.css";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [file, setFile] = useState(null);
