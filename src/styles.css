@@ -1,3 +1,131 @@
+/* General layout */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px 15px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.03);
+  border-radius: 8px;
+}
+
+/* Tab buttons */
+.tab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+
+.tab-buttons button {
+  padding: 14px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  border-radius: 8px;
+  min-width: 120px;
+  transition: all 0.2s ease-in-out;
+}
+
+.tab-buttons button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.tab-buttons button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* File uploader */
+.dropzone {
+  border: 2px dashed #aaa;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.dropzone input[type="file"] {
+  margin: 10px auto;
+  display: block;
+}
+
+/* Passport section */
+.passport-container {
+  text-align: center;
+  padding: 10px 5px;
+}
+
+.passport-container select,
+.passport-container input[type="file"] {
+  margin: 12px 0;
+  font-size: 1rem;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Canvas preview */
+canvas {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+/* Footer */
+.app-footer {
+  margin-top: 40px;
+  padding: 15px 10px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  background-color: #f7f7f7;
+}
+
+.app-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+.app-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Download links */
+.download-links {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  background-color: #fafafa;
+  text-align: left;
+}
+
+.download-links a {
+  display: block;
+  margin-bottom: 8px;
+  color: #007bff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.download-links a:hover {
+  text-decoration: underline;
+}
+
+/* Balloon Game */
 .game-container {
   text-align: center;
   margin-top: 20px;
@@ -96,4 +224,23 @@
   font-size: 1.3rem;
   font-weight: bold;
   color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .tab-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-buttons button {
+    width: 100%;
+    max-width: 300px;
+    font-size: 1.2rem;
+  }
+
+  .game-info {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

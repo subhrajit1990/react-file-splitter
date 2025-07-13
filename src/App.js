@@ -14,11 +14,26 @@ const App = () => {
     <div className="container">
       <h1>Get It Done!</h1>
 
-      <div className="tab-buttons">
-        <button onClick={() => setTab("splitter")}>File Splitter</button>
-        <button onClick={() => setTab("passport")}>Passport Photo</button>
-        <button onClick={() => setTab("game")}>Balloon Game</button>
-      </div>
+    <div className="tab-buttons">
+  <button
+    onClick={() => setTab("splitter")}
+    className={tab === "splitter" ? "active" : ""}
+  >
+    File Splitter
+  </button>
+  <button
+    onClick={() => setTab("passport")}
+    className={tab === "passport" ? "active" : ""}
+  >
+    Passport Photo
+  </button>
+  <button
+    onClick={() => setTab("game")}
+    className={tab === "game" ? "active" : ""}
+  >
+    Balloon Game
+  </button>
+</div>
 
       {tab === "splitter" && (
         <>
