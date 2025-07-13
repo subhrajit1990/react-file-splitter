@@ -3,6 +3,7 @@ import FileUploader from "./components/FileUploader";
 import FileSplitter from "./components/FileSplitter";
 import PassportPhoto from "./components/PassportPhoto";
 import Footer from "./components/Footer";
+import BalloonGame from "./components/BalloonGame";
 import "./styles.css";
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <div className="tab-buttons">
         <button onClick={() => setTab("splitter")}>File Splitter</button>
         <button onClick={() => setTab("passport")}>Passport Photo</button>
+        <button onClick={() => setTab("game")}>Balloon Game</button>
       </div>
 
       {tab === "splitter" && (
@@ -33,6 +35,7 @@ const App = () => {
       )}
 
       {tab === "passport" && <PassportPhoto />}
+      {tab === "game" && <BalloonGame />}
       <Footer />
     </div>
   );
