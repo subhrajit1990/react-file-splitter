@@ -4,6 +4,7 @@ import FileSplitter from "./components/FileSplitter";
 import PassportPhoto from "./components/PassportPhoto";
 import Footer from "./components/Footer";
 import BalloonGame from "./components/BalloonGame";
+import ImageToPDF from "./components/ImageToPDF";
 import "./styles.css";
 
 const App = () => {
@@ -33,6 +34,12 @@ const App = () => {
   >
     Balloon Game
   </button>
+  <button
+  onClick={() => setTab("pdf")}
+  className={tab === "pdf" ? "active" : ""}
+>
+  Image to PDF
+</button>
 </div>
 
       {tab === "splitter" && (
@@ -51,6 +58,7 @@ const App = () => {
 
       {tab === "passport" && <PassportPhoto />}
       {tab === "game" && <BalloonGame />}
+      {tab === "pdf" && <ImageToPDF />}
       <Footer />
     </div>
   );
