@@ -17,7 +17,7 @@ const ImageToPDF = () => {
     setImages(previews);
   };
 
-  const generatePDF = () => {
+  const generatePDF = async () => {
     if (images.length === 0) return;
 
     const pdf = new jsPDF({
@@ -29,28 +29,34 @@ const ImageToPDF = () => {
     const pageWidth = 210;
     const pageHeight = 297;
 
-    images.forEach((img, index) => {
-      if (index > 0) pdf.addPage();
-      const image = new Image();
-      image.src = img.url;
-
-      image.onload = () => {
-        const ratio = Math.min(
-          pageWidth / image.width,
-          pageHeight / image.height
-        );
-        const width = image.width * ratio;
-        const height = image.height * ratio;
-        const x = (pageWidth - width) / 2;
-        const y = (pageHeight - height) / 2;
-
-        pdf.addImage(image, "JPEG", x, y, width, height);
-
-        if (index === images.length - 1) {
-          pdf.save("images.pdf");
-        }
-      };
+    const imagePromises = images.map((img) => {
+      return new Promise((resolve) => {
+        const image = new Image();
+        image.src = img.url;
+        image.onload = () => {
+          resolve(image);
+        };
+      });
     });
+
+    const loadedImages = await Promise.all(imagePromises);
+
+    loadedImages.forEach((image, index) => {
+      if (index > 0) pdf.addPage();
+
+      const ratio = Math.min(
+        pageWidth / image.width,
+        pageHeight / image.height
+      );
+      const width = image.width * ratio;
+      const height = image.height * ratio;
+      const x = (pageWidth - width) / 2;
+      const y = (pageHeight - height) / 2;
+
+      pdf.addImage(image, "JPEG", x, y, width, height);
+    });
+
+    pdf.save("images.pdf");
   };
 
   return (

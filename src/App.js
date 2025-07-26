@@ -57,8 +57,8 @@ const App = () => {
       )}
 
       {tab === "passport" && <PassportPhoto />}
-      {tab === "game" && <BalloonGame />}
       {tab === "pdf" && <ImageToPDF />}
+      {tab === "game" && <BalloonGame />}
       <Footer />
     </div>
   );
