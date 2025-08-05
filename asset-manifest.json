@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-file-splitter/static/css/main.8ff85db9.css",
-    "main.js": "/react-file-splitter/static/js/main.2caf43a6.js",
+    "main.js": "/react-file-splitter/static/js/main.a7b74b5c.js",
     "static/js/239.bd92f972.chunk.js": "/react-file-splitter/static/js/239.bd92f972.chunk.js",
     "static/js/977.d12c87c5.chunk.js": "/react-file-splitter/static/js/977.d12c87c5.chunk.js",
     "static/js/455.e8466350.chunk.js": "/react-file-splitter/static/js/455.e8466350.chunk.js",
     "static/js/453.caa6b905.chunk.js": "/react-file-splitter/static/js/453.caa6b905.chunk.js",
     "index.html": "/react-file-splitter/index.html",
     "main.8ff85db9.css.map": "/react-file-splitter/static/css/main.8ff85db9.css.map",
-    "main.2caf43a6.js.map": "/react-file-splitter/static/js/main.2caf43a6.js.map",
+    "main.a7b74b5c.js.map": "/react-file-splitter/static/js/main.a7b74b5c.js.map",
     "239.bd92f972.chunk.js.map": "/react-file-splitter/static/js/239.bd92f972.chunk.js.map",
     "977.d12c87c5.chunk.js.map": "/react-file-splitter/static/js/977.d12c87c5.chunk.js.map",
     "455.e8466350.chunk.js.map": "/react-file-splitter/static/js/455.e8466350.chunk.js.map",
@@ -16,6 +16,6 @@
   },
   "entrypoints": [
     "static/css/main.8ff85db9.css",
-    "static/js/main.2caf43a6.js"
+    "static/js/main.a7b74b5c.js"
   ]
 }
