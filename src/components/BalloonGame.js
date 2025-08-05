@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 
 const BALLOON_TYPES = [
   { type: "red", color: "red", points: 1, speed: 6, movement: "straight" },

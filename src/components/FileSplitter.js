@@ -1,7 +1,6 @@
 
 import React, { useState } from "react";
 import JSZip from "jszip";
-import { saveAs } from "file-saver";
 
 const FileSplitter = ({ file }) => {
   const [mode, setMode] = useState("size");
