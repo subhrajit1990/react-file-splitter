@@ -26,9 +26,9 @@ const FileUploader = ({ onFileSelect }) => {
     >
       <input {...getInputProps()} />
       {isDragActive ? (
-        <p>Drop the file here....................</p>
+        <p>Drop the file here...</p>
       ) : (
-        <p>Drag and drop a .txt or .log file here, or tap to browse</p>
+        <p>Drag and drop a .txt or .log file here, or tap to browse ...</p>
       )}
     </div>
   );
